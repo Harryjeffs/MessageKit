@@ -341,8 +341,8 @@ open class MessagesViewController: UIViewController, UICollectionViewDelegateFlo
     inputContainerView.translatesAutoresizingMaskIntoConstraints = false
 
     NSLayoutConstraint.activate([
-      messagesCollectionView.topAnchor.constraint(equalTo: view.topAnchor),
-      messagesCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+      messagesCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+	  messagesCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
       messagesCollectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
       messagesCollectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
     ])

@@ -29,7 +29,7 @@ let package = Package(
         .library(name: "MessageKit", targets: ["MessageKit"])
     ],
     dependencies: [
-		.package(url: "https://github.com/nathantannar4/InputBarAccessoryView", .exactItem(.init(6, 3, 0))),
+		.package(url: "https://github.com/nathantannar4/InputBarAccessoryView", branch: "master"),
     ],
     targets: [
         // MARK: - MessageKit
